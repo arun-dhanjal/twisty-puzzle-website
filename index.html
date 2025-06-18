@@ -16,66 +16,36 @@
 				<p>
 				  <b style="font-size: large;">The shiny 5 x 5:</b><br>
 				  <img 
-				    id="shiny-5x5" 
+				    class="toggle-puzzle" 
 				    src="Shiny 5x5 Scrambled.jpg" 
-				    width="50%" 
-				    style="cursor: pointer;"
-				    onclick="toggleImage1()"
-				  ><br>
+				    data-scrambled="Shiny 5x5 Scrambled.jpg" 
+				    data-solved="Shiny 5x5 Solved.jpg"
+				    width="50%">
+				  <br>
 				  <i>Click the image to solve the puzzle!</i>
 				</p>
-				<script>
-				  function toggleImage1() {
-				    var img = document.getElementById('shiny-5x5');
-				    if (img.src.includes('Scrambled')) {
-				      img.src = 'Shiny 5x5 Solved.jpg';
-				    } else {
-				      img.src = 'Shiny 5x5 Scrambled.jpg';
-				    }
-				  }
-				</script>
 				<p>
 				  <b style="font-size: large;">The Teraminx:</b><br>
 				  <img 
-				    id="teraminx" 
+				    class="toggle-puzzle" 
 				    src="Teraminx Scrambled.jpg" 
-				    width="50%" 
-				    style="cursor: pointer;"
-				    onclick="toggleImage2()"
-				  ><br>
+				    data-scrambled="Teraminx Scrambled.jpg" 
+				    data-solved="Teraminx Solved.jpg"
+				    width="50%">
+				  <br>
 				  <i>Click the image to solve the puzzle!</i>
 				</p>
-				<script>
-				  function toggleImage2() {
-				    var img = document.getElementById('teraminx');
-				    if (img.src.includes('Scrambled')) {
-				      img.src = 'Teraminx Solved.jpg';
-				    } else {
-				      img.src = 'Teraminx Scrambled.jpg';
-				    }
-				  }
-				</script>
 				<p>
 				  <b style="font-size: large;">The 13 x 13:</b><br>
 				  <img 
-				    id="13x13" 
+				    class="toggle-puzzle" 
 				    src="13x13 Scrambled.jpg" 
-				    width="50%" 
-				    style="cursor: pointer;"
-				    onclick="toggleImage3()"
-				  ><br>
+				    data-scrambled="13x13 Scrambled.jpg" 
+				    data-solved="13x13 Solved.jpg"
+				    width="50%">
+				  <br>
 				  <i>Click the image to solve the puzzle!</i>
 				</p>
-				<script>
-				  function toggleImage3() {
-				    var img = document.getElementById('13x13');
-				    if (img.src.includes('Scrambled')) {
-				      img.src = '13x13 Solved.jpg';
-				    } else {
-				      img.src = '13x13 Scrambled.jpg';
-				    }
-				  }
-				</script>
 			</section>
 			<footer>
 				<p>
