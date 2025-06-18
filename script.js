@@ -4,8 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     img.addEventListener('click', function() {
       const scrambled = img.getAttribute('data-scrambled');
       const solved = img.getAttribute('data-solved');
-      // Use endsWith for more robust filename matching
-      if (img.src.endsWith(scrambled)) {
+      // Use only the filename for comparison to handle full URL issues
+      const currentFile = img.src.split('/').pop();
+      if (currentFile === scrambled) {
         img.src = solved;
       } else {
         img.src = scrambled;
