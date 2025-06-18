@@ -14,10 +14,26 @@
 			</header>
 			<section>
 				<p>
-					<b style="font-size: large;">The shiny 5 x 5:</b><br>
-					<img src="Shiny 5x5 Scrambled.jpg" onmouseover="this.src='Shiny 5x5 Solved.jpg'" onmouseout="this.src='Shiny 5x5 Scrambled.jpg'" width="50%"><br>
-					<i>Hover over the image to solve the puzzle!</i>
+				  <b style="font-size: large;">The shiny 5 x 5:</b><br>
+				  <img 
+				    id="shiny-cube" 
+				    src="Shiny 5x5 Scrambled.jpg" 
+				    width="50%" 
+				    style="cursor: pointer;"
+				    onclick="toggleImage()"
+				  ><br>
+				  <i>Click the image to solve the puzzle!</i>
 				</p>
+				<script>
+				  function toggleImage() {
+				    var img = document.getElementById('shiny-cube');
+				    if (img.src.includes('Scrambled')) {
+				      img.src = 'Shiny 5x5 Solved.jpg';
+				    } else {
+				      img.src = 'Shiny 5x5 Scrambled.jpg';
+				    }
+				  }
+				</script>
 				<p>
 					<b style="font-size:large;">The Teraminx:</b><br>
 					<img src="Teraminx Scrambled.jpg" onmouseover="this.src='Teraminx Solved.jpg'" onmouseout="this.src='Teraminx Scrambled.jpg'" width="50%"><br>
