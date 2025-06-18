@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #4B4B4B;
+    background-color: #dedede;
+    font-family: Arial;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    background-color: #77a970;
+    color:#2b520f;
+    font-size: 150%;
+}
+
+section {
+    flex-grow: 1;
+}
+
+section p {
+    padding: 30px;
+}
+
+footer {
+    background-color: #e05f5f;
+    text-align: right;
+}
+
+footer p {
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    color:rgb(245, 192, 192)
+}
